@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LIGTAS: Street and Online Sexual Harassment in the Philippines</title>
+  <meta name="description" content="LIGTAS helps Filipino students and young adults recognize, stop and report street and online sexual harassment. Laws, real statistics, bystander steps and hotlines.">
+  <meta name="theme-color" content="#FFF6E9">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path d='M32 4 8 13v17c0 15 10 26 24 30 14-4 24-15 24-30V13z' fill='%236D4AE0'/><path d='M22 33l7 7 14-15' stroke='%23FF7B67' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://d8j0ntlcm91z4.cloudfront.net" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Page-load intro: logo draw-in (under 1.5 s, skipped for reduced motion) -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <svg class="intro-mark" viewBox="0 0 64 64" width="84" height="84">
+      <path class="intro-shield" d="M32 4 8 13v17c0 15 10 26 24 30 14-4 24-15 24-30V13z"/>
+      <path class="intro-check" d="M22 33l7 7 14-15"/>
+    </svg>
+    <span class="intro-word">ligtas</span>
+  </div>
+
+  <div class="cursor" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track"><span>Bawal bastos</span><i class="tk-star tk-0">✦</i><span>Safe on the street</span><i class="tk-star tk-1">✦</i><span>Safe on the screen</span><i class="tk-star tk-0">✦</i><span>RA 11313 protects you</span><i class="tk-star tk-1">✦</i><span>Call 0919 777 7377</span><i class="tk-star tk-0">✦</i><span>Bawal bastos</span><i class="tk-star tk-0">✦</i><span>Safe on the street</span><i class="tk-star tk-1">✦</i><span>Safe on the screen</span><i class="tk-star tk-0">✦</i><span>RA 11313 protects you</span><i class="tk-star tk-1">✦</i><span>Call 0919 777 7377</span><i class="tk-star tk-0">✦</i></div>
+    </div>
+    <div class="header-row">
+    <a class="brand" href="#top" aria-label="LIGTAS home">
+      <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true">
+        <path d="M32 4 8 13v17c0 15 10 26 24 30 14-4 24-15 24-30V13z" fill="#6D4AE0" stroke="#1A1230" stroke-width="3"/>
+        <path d="M22 33l7 7 14-15" stroke="#FFE14D" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>ligtas</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-toggle-bars" aria-hidden="true"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a class="u-link" href="#issue">The issue</a></li>
+        <li><a class="u-link" href="#numbers">Numbers</a></li>
+        <li><a class="u-link" href="#laws">Laws</a></li>
+        <li><a class="u-link" href="#inclusion">Inclusion</a></li>
+        <li><a class="u-link" href="#action">Take action</a></li>
+        <li><a class="u-link" href="#references">References</a></li>
+        <li><a class="nav-help" href="#help">Get help now</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-3d" id="hero3d" aria-hidden="true"></canvas>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="sticker-row">
+            <span class="sticker sticker-yellow">For Filipino students, 16 to 25</span>
+            <span class="sticker sticker-teal">Street + online harassment</span>
+          </div>
+          <h1 class="hero-title" id="hero-title">
+            <span class="hero-line-1" data-split>Safe on the street.</span>
+            <span class="hero-line-2">Safe on the screen.</span>
+          </h1>
+          <p class="hero-sub">Catcalling, stalking and online harassment are everyday realities for many young Filipinos. They are also against the law. Learn to spot them, stop them and report them.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary magnetic" href="#issue">Learn More</a>
+            <a class="btn btn-cream magnetic" href="#help">Report / Get Help</a>
+          </div>
+        </div>
+
+        <div class="hero-collage" id="heroCollage">
+          <div class="collage-arch" data-depth="40">
+            <video class="hero-video" id="heroVideo" muted loop playsinline preload="none"
+              poster="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_141904_f092f28c-be2a-460f-b546-f67af13360e6.png"
+              aria-label="Video: young Filipinos of different genders walking calmly through a well-lit city street at dusk"
+              data-src-mp4="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_141916_08df2f31-06c3-4b21-8cbf-06f6aacb62d0.mp4"
+              data-src-webm="">
+            </video>
+          </div>
+          <figure class="collage-tile" data-depth="80">
+            <img loading="eager" decoding="async" width="1024" height="1024"
+              src="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_142146_719dc449-29f3-417d-9a9b-eeac91697c86.png"
+              alt="Young Filipino commuters of different genders riding a clean, well-lit train">
+          </figure>
+          <a class="stat-badge" href="#ref-1" data-depth="120">
+            <strong>3 in 5</strong>
+            <span>women surveyed in Quezon City harassed in public [1]</span>
+          </a>
+          <svg class="collage-star" data-depth="160" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0 L61 39 L100 50 L61 61 L50 100 L39 61 L0 50 L39 39 Z"/></svg>
+        </div>
+      </div>
+      <button class="video-toggle" id="videoToggle" aria-pressed="false" hidden>Pause video</button>
+    </section>
+
+    <!-- 2. UNDERSTANDING THE ISSUE -->
+    <section class="section section-grid" id="issue" aria-labelledby="issue-title">
+      <div class="wrap grid-2">
+        <div class="reveal">
+          <h2 class="section-title" id="issue-title">What counts as <em>harassment</em></h2>
+          <p class="lede">Gender-based sexual harassment is any unwanted remark, gesture or act aimed at someone because of their sex, gender, gender expression or sexual orientation. Philippine law recognizes that it happens on streets, in jeepneys and trains, at school, at work and online.<sup><a class="cite" href="#ref-13">13</a></sup></p>
+          <p>It is not about how someone dresses or where they walk. It is about a person choosing to make someone else feel unsafe.</p>
+        </div>
+        <figure class="figure reveal" data-parallax>
+          <picture>
+            <source media="(max-width: 640px)" srcset="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_142146_719dc449-29f3-417d-9a9b-eeac91697c86.png">
+            <img loading="lazy" decoding="async" width="1600" height="900"
+              src="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_141904_c76a0077-7aaf-438a-8312-f5897e2995a0.png"
+              alt="Young Filipino commuters of different genders riding a clean, well-lit train at dusk, relaxed and giving each other space">
+          </picture>
+          <figcaption>Everyone deserves a commute like this.</figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <h3 class="sub-title reveal">Forms it takes</h3>
+        <ul class="forms-grid" role="list">
+          <li class="form-card reveal tilt">
+            <h4>Catcalling and wolf-whistling</h4>
+            <p>Whistles, "hi sexy," kissing sounds or comments shouted at someone passing by.</p>
+          </li>
+          <li class="form-card reveal tilt">
+            <h4>Stalking and following</h4>
+            <p>Following someone home, waiting outside their school, or repeatedly showing up where they are.</p>
+          </li>
+          <li class="form-card reveal tilt">
+            <h4>Unwanted comments</h4>
+            <p>Remarks about a person's body, sexual jokes, or relentless questions about their name, number or destination.</p>
+          </li>
+          <li class="form-card reveal tilt">
+            <h4>Online harassment</h4>
+            <p>Unwanted sexual messages, threats, sharing photos without consent, or spreading sexual rumors on social media.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="wrap">
+        <h3 class="sub-title reveal">Myth <em>vs</em> fact</h3>
+        <p class="hint reveal">Tap or press Enter on a card to flip it.</p>
+        <ul class="flip-grid" role="list">
+          <li class="reveal">
+            <button class="flip" aria-pressed="false">
+              <span class="flip-face flip-front"><span class="tag">Myth</span>It's just a compliment.</span>
+              <span class="flip-face flip-back" aria-hidden="true"><span class="tag tag-fact">Fact</span>Catcalling, wolf-whistling and persistent comments on someone's looks are punishable acts under the Safe Spaces Act.<sup>13</sup></span>
+            </button>
+          </li>
+          <li class="reveal">
+            <button class="flip" aria-pressed="false">
+              <span class="flip-face flip-front"><span class="tag">Myth</span>It only happens at night, to people who dress a certain way.</span>
+              <span class="flip-face flip-back" aria-hidden="true"><span class="tag tag-fact">Fact</span>In a 2016 Quezon City survey, 70% of incidents happened during the day.<sup>1, 2</sup> UN Women's Safe Cities program stresses that clothing and time of day play no role.<sup>7</sup></span>
+            </button>
+          </li>
+          <li class="reveal">
+            <button class="flip" aria-pressed="false">
+              <span class="flip-face flip-front"><span class="tag">Myth</span>Online harassment isn't real harassment.</span>
+              <span class="flip-face flip-back" aria-hidden="true"><span class="tag tag-fact">Fact</span>The Safe Spaces Act covers gender-based online sexual harassment, with jail time and fines of ₱100,000 to ₱500,000.<sup>13</sup></span>
+            </button>
+          </li>
+          <li class="reveal">
+            <button class="flip" aria-pressed="false">
+              <span class="flip-face flip-front"><span class="tag">Myth</span>Only women get harassed.</span>
+              <span class="flip-face flip-back" aria-hidden="true"><span class="tag tag-fact">Fact</span>In a study of Manila college students, 32% of men and 15% of LGBTQI students also reported harassment around public transit.<sup>6</sup></span>
+            </button>
+          </li>
+          <li class="reveal">
+            <button class="flip" aria-pressed="false">
+              <span class="flip-face flip-front"><span class="tag">Myth</span>If it happened, the victim must have invited it.</span>
+              <span class="flip-face flip-back" aria-hidden="true"><span class="tag tag-fact">Fact</span>The choice belongs to the harasser. Yet in 2016, 59% of women and 64% of men surveyed in two Quezon City barangays still blamed women, which is exactly the belief we need to unlearn.<sup>2</sup></span>
+            </button>
+          </li>
+        </ul>
+        <p class="source flip-sources reveal">Sources for these cards: <a class="cite" href="#ref-1">[1]</a> <a class="cite" href="#ref-2">[2]</a> <a class="cite" href="#ref-6">[6]</a> <a class="cite" href="#ref-7">[7]</a> <a class="cite" href="#ref-13">[13]</a></p>
+      </div>
+    </section>
+
+    <!-- 3. BY THE NUMBERS -->
+    <section class="section section-night numbers" id="numbers" aria-labelledby="numbers-title">
+      <div class="wrap numbers-pin">
+        <h2 class="section-title section-title-xl" id="numbers-title">By the <em>numbers</em></h2>
+        <p class="lede lede-light">Every figure below comes from a named survey. The year and reference number sit directly under it.</p>
+
+        <ul class="counters" role="list">
+          <li class="counter">
+            <p class="counter-value"><span class="count" data-target="60">60</span>%</p>
+            <p class="counter-label">of women surveyed in two Quezon City barangays had been sexually harassed in a public space at least once in their lives</p>
+            <p class="source">Social Weather Stations, 2016 <a class="cite" href="#ref-1">[1]</a> <a class="cite" href="#ref-2">[2]</a></p>
+          </li>
+          <li class="counter">
+            <p class="counter-value"><span class="count" data-target="88">88</span>%</p>
+            <p class="counter-label">of women aged 18 to 24 in the same survey had experienced sexual harassment at least once</p>
+            <p class="source">Social Weather Stations, 2016 <a class="cite" href="#ref-1">[1]</a> <a class="cite" href="#ref-3">[3]</a></p>
+          </li>
+          <li class="counter">
+            <p class="counter-value"><span class="count" data-target="70">70</span>%</p>
+            <p class="counter-label">of these incidents were committed by complete strangers</p>
+            <p class="source">Social Weather Stations, 2016 <a class="cite" href="#ref-1">[1]</a> <a class="cite" href="#ref-2">[2]</a></p>
+          </li>
+          <li class="counter">
+            <p class="counter-value"><span class="count" data-target="68">68</span>%</p>
+            <p class="counter-label">of Filipino girls and young women aged 15 to 24 have been harassed on social media</p>
+            <p class="source">Plan International, 2020 <a class="cite" href="#ref-4">[4]</a> <a class="cite" href="#ref-5">[5]</a></p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="wrap charts">
+        <figure class="chart-card reveal">
+          <figcaption>
+            <h3>When street harassment happens</h3>
+            <p>Share of incidents by time of day, Quezon City</p>
+          </figcaption>
+          <div class="chart-box"><canvas id="chartTime" role="img" aria-label="Bar chart: 70% of incidents happened during the day, 23% at night, 1% after midnight."></canvas></div>
+          <p class="source">Social Weather Stations, 2016 <a class="cite" href="#ref-2">[2]</a></p>
+        </figure>
+
+        <figure class="chart-card reveal">
+          <figcaption>
+            <h3>Not only women</h3>
+            <p>Manila college students who reported sexual harassment on or around public transit, by gender</p>
+          </figcaption>
+          <div class="chart-box"><canvas id="chartGender" role="img" aria-label="Bar chart: 51% of female, 32% of male and 15% of LGBTQI students reported transit harassment."></canvas></div>
+          <p class="source">Loukaitou-Sideris &amp; Ceccato (Eds.), 2020 <a class="cite" href="#ref-6">[6]</a></p>
+        </figure>
+
+        <figure class="chart-card reveal">
+          <figcaption>
+            <h3>How often it happens online</h3>
+            <p>Filipino girls and young women harassed on social media who say it happens&hellip;</p>
+          </figcaption>
+          <div class="chart-box"><canvas id="chartOnline" role="img" aria-label="Bar chart: 50% say online harassment happens frequently, 33% say very frequently."></canvas></div>
+          <p class="source">Plan International, 2020 <a class="cite" href="#ref-5">[5]</a></p>
+        </figure>
+
+        <div class="chart-card chart-note reveal">
+          <h3>Part of a wider pattern</h3>
+          <p class="big-stat">17.5%</p>
+          <p>of Filipino women aged 15 to 49 have experienced physical, sexual or emotional violence from a current or recent partner.</p>
+          <p class="source">Philippine Statistics Authority, 2022 NDHS <a class="cite" href="#ref-8">[8]</a></p>
+          <hr>
+          <p class="placeholder" role="note"><strong>Placeholder:</strong> latest national count of Safe Spaces Act complaints filed with the PNP. No current verified figure was found; request it from the PNP Women and Children Protection Center before publishing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. THE LAW PROTECTS YOU -->
+    <section class="section section-stripes" id="laws" aria-labelledby="laws-title">
+      <div class="wrap grid-2 grid-2-top">
+        <div>
+          <h2 class="section-title reveal" id="laws-title">The law <em>protects you</em></h2>
+          <p class="lede reveal">Five Philippine laws work together against harassment and gender-based violence. Open each one for what it covers, what it costs offenders, and the full text.</p>
+          <figure class="figure figure-square reveal" data-parallax>
+            <picture>
+              <source media="(max-width: 640px)" srcset="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_142159_87d53274-cd7f-492b-b5ab-a97072086a69.png">
+              <img loading="lazy" decoding="async" width="1600" height="900"
+                src="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_141905_5930e3da-69fd-47e9-a630-908404b23259.png"
+                alt="Abstract illustration of soft translucent arcs forming a sheltering dome over small glowing figures">
+            </picture>
+          </figure>
+        </div>
+
+        <ol class="timeline" role="list">
+          <li class="law reveal">
+            <h3>
+              <button class="law-toggle" aria-expanded="false" aria-controls="law-7877" id="law-7877-btn">
+                <span class="law-year">1995</span>
+                <span class="law-name">RA 7877 <span>Anti-Sexual Harassment Act</span></span>
+                <span class="law-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="law-panel" id="law-7877" role="region" aria-labelledby="law-7877-btn" hidden>
+              <p><strong>Covers:</strong> sexual harassment by someone with authority or influence over you at work, in school or in training, such as a boss, teacher or coach who demands sexual favors.</p>
+              <p><strong>Penalty:</strong> 1 to 6 months in jail, a fine of ₱10,000 to ₱20,000, or both.</p>
+              <p><a class="u-link" href="https://lawphil.net/statutes/repacts/ra1995/ra_7877_1995.html" target="_blank" rel="noopener">Read the full text on LawPhil</a> <a class="cite" href="#ref-9">[9]</a></p>
+            </div>
+          </li>
+          <li class="law reveal">
+            <h3>
+              <button class="law-toggle" aria-expanded="false" aria-controls="law-9262" id="law-9262-btn">
+                <span class="law-year">2004</span>
+                <span class="law-name">RA 9262 <span>Anti-Violence Against Women and Their Children Act</span></span>
+                <span class="law-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="law-panel" id="law-9262" role="region" aria-labelledby="law-9262-btn" hidden>
+              <p><strong>Covers:</strong> physical, sexual, psychological and economic abuse of women and their children by a husband, ex-partner, or someone they are dating or have dated, including stalking and harassment by that person.</p>
+              <p><strong>Penalty:</strong> jail terms that rise with the seriousness of the act, a fine of ₱100,000 to ₱300,000, and required counseling. Survivors can also get protection orders.</p>
+              <p><a class="u-link" href="https://lawphil.net/statutes/repacts/ra2004/ra_9262_2004.html" target="_blank" rel="noopener">Read the full text on LawPhil</a> <a class="cite" href="#ref-10">[10]</a></p>
+            </div>
+          </li>
+          <li class="law reveal">
+            <h3>
+              <button class="law-toggle" aria-expanded="false" aria-controls="law-9710" id="law-9710-btn">
+                <span class="law-year">2009</span>
+                <span class="law-name">RA 9710 <span>Magna Carta of Women</span></span>
+                <span class="law-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="law-panel" id="law-9710" role="region" aria-labelledby="law-9710-btn" hidden>
+              <p><strong>Covers:</strong> the rights of women to equality and to protection from all forms of violence. It requires government offices to set up gender programs and violence-against-women desks.</p>
+              <p><strong>Penalty:</strong> it is a rights law rather than a criminal law. Officials and institutions who violate it face administrative sanctions and can be ordered to pay damages.</p>
+              <p><a class="u-link" href="https://lawphil.net/statutes/repacts/ra2009/ra_9710_2009.html" target="_blank" rel="noopener">Read the full text on LawPhil</a> <a class="cite" href="#ref-11">[11]</a></p>
+            </div>
+          </li>
+          <li class="law reveal">
+            <h3>
+              <button class="law-toggle" aria-expanded="false" aria-controls="law-10175" id="law-10175-btn">
+                <span class="law-year">2012</span>
+                <span class="law-name">RA 10175 <span>Cybercrime Prevention Act</span></span>
+                <span class="law-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="law-panel" id="law-10175" role="region" aria-labelledby="law-10175-btn" hidden>
+              <p><strong>Covers:</strong> crimes committed through computers and the internet, including cybersex, online libel and illegal access to someone's accounts.</p>
+              <p><strong>Penalty:</strong> crimes under the Revised Penal Code carry a penalty one degree higher when committed online, on top of the specific penalties the act sets for cybercrimes.</p>
+              <p><a class="u-link" href="https://lawphil.net/statutes/repacts/ra2012/ra_10175_2012.html" target="_blank" rel="noopener">Read the full text on LawPhil</a> <a class="cite" href="#ref-12">[12]</a></p>
+            </div>
+          </li>
+          <li class="law law-key reveal">
+            <h3>
+              <button class="law-toggle" aria-expanded="false" aria-controls="law-11313" id="law-11313-btn">
+                <span class="law-year">2019</span>
+                <span class="law-name">RA 11313 <span>Safe Spaces Act (Bawal Bastos Law)</span></span>
+                <span class="law-icon" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="law-panel" id="law-11313" role="region" aria-labelledby="law-11313-btn" hidden>
+              <p><strong>Covers:</strong> gender-based sexual harassment in streets, public spaces, public transport, online, at work and in schools, including harassment between peers and by strangers. Homophobic and transphobic slurs are explicitly included.</p>
+              <p><strong>Penalty in public spaces</strong> (grows with each repeat offense):</p>
+              <ul class="penalty-list">
+                <li>Catcalling, wolf-whistling, slurs, persistent comments: first offense ₱1,000 plus 12 hours of community service and a gender sensitivity seminar; up to 30 days in jail and ₱10,000 for a third offense.</li>
+                <li>Offensive gestures and flashing: first offense ₱10,000 plus community service; jail time for repeat offenses.</li>
+                <li>Stalking, groping and unwanted touching: first offense 11 to 30 days in jail or ₱30,000; up to 6 months and higher fines for repeat offenses.</li>
+              </ul>
+              <p><strong>Penalty online:</strong> prisión correccional (medium period) or a fine of ₱100,000 to ₱500,000.</p>
+              <p><a class="u-link" href="https://lawphil.net/statutes/repacts/ra2019/ra_11313_2019.html" target="_blank" rel="noopener">Read the full text on LawPhil</a> <a class="cite" href="#ref-13">[13]</a> <a class="cite" href="#ref-14">[14]</a></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. INCLUSION & EMPOWERMENT -->
+    <section class="section section-lilac" id="inclusion" aria-labelledby="inclusion-title">
+      <div class="wrap grid-2">
+        <figure class="figure reveal" data-parallax>
+          <picture>
+            <source media="(max-width: 640px)" srcset="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_142155_04a880d9-078c-479c-b3f6-296394152929.png">
+            <img loading="lazy" decoding="async" width="1600" height="900"
+              src="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_141904_f092f28c-be2a-460f-b546-f67af13360e6.png"
+              alt="A group of young Filipinos of different genders and gender expressions standing together on a city sidewalk at dusk, arms linked and smiling">
+          </picture>
+        </figure>
+        <div class="reveal">
+          <h2 class="section-title" id="inclusion-title">It affects <em>all</em> of us</h2>
+          <p class="lede">Most reported harassment targets women and girls, but it does not stop there. Men are harassed too, and LGBTQIA+ people are often targeted precisely because of how they look, love or express themselves.<sup><a class="cite" href="#ref-6">6</a></sup> The Safe Spaces Act protects every gender and names homophobic and transphobic slurs as harassment.<sup><a class="cite" href="#ref-13">13</a></sup></p>
+          <p>Girls and young women who are LGBTIQ+, from an ethnic minority or living with a disability face even higher risk online.<sup><a class="cite" href="#ref-4">4</a></sup> Empowerment means making every space safe for all of them.</p>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <h3 class="sub-title reveal">If you see it: the 5 D's</h3>
+        <p class="hint reveal">Five ways a bystander can help. Use whichever feels safe for you in the moment.<sup><a class="cite" href="#ref-17">17</a></sup></p>
+        <ul class="d-grid" role="list">
+          <li class="d-card tilt reveal">
+            <span class="d-letter" aria-hidden="true">D</span>
+            <h4>Distract</h4>
+            <p>Interrupt without confronting. Ask the person for directions or the time, or pretend you know them.</p>
+          </li>
+          <li class="d-card tilt reveal">
+            <span class="d-letter" aria-hidden="true">D</span>
+            <h4>Delegate</h4>
+            <p>Get help from someone with authority: the jeepney driver, a guard, a teacher, or a barangay tanod.</p>
+          </li>
+          <li class="d-card tilt reveal">
+            <span class="d-letter" aria-hidden="true">D</span>
+            <h4>Document</h4>
+            <p>If someone is already helping and it's safe, record or take notes. Never post it without the person's consent.</p>
+          </li>
+          <li class="d-card tilt reveal">
+            <span class="d-letter" aria-hidden="true">D</span>
+            <h4>Delay</h4>
+            <p>Check in afterward. Ask "Are you okay?" and offer to walk with them or help them report.</p>
+          </li>
+          <li class="d-card tilt reveal">
+            <span class="d-letter" aria-hidden="true">D</span>
+            <h4>Direct</h4>
+            <p>Only if it's safe: say firmly "That's not okay, leave them alone," then turn your attention back to the person.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. INTERACTIVE 3D -->
+    <section class="section section-night shield-section" id="shield" aria-labelledby="shield-title">
+      <div class="wrap shield-wrap">
+        <div class="shield-stage" id="shieldStage">
+          <div class="orbit" aria-hidden="true"><span class="ring ring-1"></span><span class="ring ring-2"></span><span class="ring ring-3"></span></div>
+          <model-viewer id="shieldModel"
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_142032_09d329ca-abd9-4f7e-8760-3e656fb5667f.glb"
+            alt="A 3D shield with an open palm at its center. Drag to rotate it."
+            camera-controls
+            auto-rotate
+            rotation-per-second="14deg"
+            interaction-prompt="none"
+            shadow-intensity="0"
+            exposure="1.1"
+            loading="lazy"
+            reveal="auto"
+            disable-zoom
+            touch-action="pan-y">
+          </model-viewer>
+          <img class="shield-fallback" hidden loading="lazy"
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_142048_116b6308-8afb-4797-b225-0241fb19d9df.png"
+            alt="A glowing low-poly shield with an open palm at its center">
+        </div>
+        <div class="shield-copy">
+          <h2 class="section-title" id="shield-title">Every space should be a <em>safe space.</em></h2>
+          <p class="lede lede-light">The street, the train, the classroom, the group chat. Drag the shield to turn it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. TAKE ACTION -->
+    <section class="section section-paper" id="action" aria-labelledby="action-title">
+      <div class="wrap">
+        <h2 class="section-title section-title-xl reveal" id="action-title">Take <em>action</em></h2>
+      </div>
+
+      <div class="wrap grid-2 grid-2-top">
+        <!-- Quiz -->
+        <div class="quiz card reveal" id="quiz" aria-labelledby="quiz-title">
+          <h3 id="quiz-title">Is this harassment?</h3>
+          <p class="quiz-progress" id="quizProgress">Scenario 1 of 6</p>
+          <p class="quiz-q" id="quizQ"></p>
+          <div class="quiz-actions">
+            <button class="btn btn-primary quiz-answer" data-answer="yes">Yes, it is</button>
+            <button class="btn btn-outline quiz-answer" data-answer="no">No, it isn't</button>
+          </div>
+          <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+          <button class="btn btn-outline quiz-next" id="quizNext" hidden>Next scenario</button>
+        </div>
+
+        <!-- Pledge -->
+        <div class="pledge card reveal">
+          <video class="pledge-video" muted loop playsinline preload="none"
+            data-src-mp4="https://d8j0ntlcm91z4.cloudfront.net/user_3K0CFOcn2VlzDLUUHyafEalBaqJ/hf_20260930_141916_a2502433-7e54-486a-815b-873c17455a00.mp4"
+            aria-label="Animation of scattered dots gathering into a heart and shield shape"></video>
+          <h3>Take the pledge</h3>
+          <p>I will not harass, I will speak up when it's safe, and I will believe people who tell me it happened to them.</p>
+          <form id="pledgeForm" novalidate>
+            <label for="pledgeName">Your first name or nickname</label>
+            <input type="text" id="pledgeName" name="pledgeName" maxlength="30" autocomplete="given-name" required aria-describedby="pledgeError">
+            <p class="form-error" id="pledgeError" role="alert"></p>
+            <button type="submit" class="btn btn-primary magnetic">Add my name</button>
+          </form>
+          <p class="pledge-count"><span id="pledgeCount">0</span> <span id="pledgeNoun">people have</span> pledged on this device</p>
+          <ul class="pledge-names" id="pledgeNames" aria-label="Recent pledges" role="list"></ul>
+        </div>
+      </div>
+
+      <!-- Hotlines -->
+      <div class="wrap" id="help">
+        <h3 class="sub-title reveal">Get help now</h3>
+        <p class="hint reveal">In immediate danger, call 911. On a phone, tap a number to call.</p>
+        <ul class="hotlines" role="list">
+          <li class="hotline reveal">
+            <h4>PNP Emergency</h4>
+            <a class="tel" href="tel:911">911</a>
+            <p>For danger happening right now.</p>
+          </li>
+          <li class="hotline reveal">
+            <h4>PNP Women and Children Protection Center</h4>
+            <a class="tel" href="tel:+639197777377">0919 777 7377</a>
+            <p>Aleng Pulis hotline for gender-based violence. 24/7 office: <a href="tel:+63285326690">(02) 8532-6690</a> <a class="cite" href="#ref-15">[15]</a> <a class="cite" href="#ref-16">[16]</a></p>
+          </li>
+          <li class="hotline reveal">
+            <h4>DSWD</h4>
+            <a class="tel" href="tel:+63289318101">(02) 8931-8101</a>
+            <p>Department of Social Welfare and Development, for crisis intervention and protective services. <a class="cite" href="#ref-15">[15]</a></p>
+          </li>
+          <li class="hotline reveal">
+            <h4>Commission on Human Rights</h4>
+            <a class="tel" href="tel:+63282948704">(02) 8294-8704</a>
+            <p>Report Safe Spaces Act violations online through the CHR <a class="u-link" href="https://bit.ly/ReportBawalBastos" target="_blank" rel="noopener">Bawal Bastos portal</a>. <a class="cite" href="#ref-16">[16]</a></p>
+          </li>
+          <li class="hotline hotline-school reveal">
+            <h4>Your school guidance office</h4>
+            <p class="tel tel-placeholder">Add your campus number</p>
+            <p>Schools must have a committee that handles harassment complaints under the Safe Spaces Act.<sup><a class="cite" href="#ref-13">13</a></sup> Ask your guidance office for its contact details.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8. REFERENCES -->
+    <section class="section section-refs" id="references" aria-labelledby="refs-title">
+      <div class="wrap">
+        <h2 class="section-title" id="refs-title">References</h2>
+        <ol class="refs">
+          <li id="ref-1">Social Weather Stations. (2016, March 11). <em>SWS presents key findings of survey on sexual violence against women and girls in Quezon City at UN Women presscon</em> [Survey findings; as reported in references 2 and 3].</li>
+          <li id="ref-2">Philippine Daily Inquirer. (2016). QC survey shows extent of sexual harassment—and silence that follows. <em>Inquirer.net</em>. <a href="https://newsinfo.inquirer.net/773013/qc-survey-shows-extent-of-sexual-harassment-and-silence-that-follows" target="_blank" rel="noopener">https://newsinfo.inquirer.net/773013/qc-survey-shows-extent-of-sexual-harassment-and-silence-that-follows</a></li>
+          <li id="ref-3">CNN Philippines. (2017, March 28). The invisible ways we experience sexual harassment. <a href="https://www.cnnphilippines.com/life/culture/2017/03/28/sexual-harassment-policies.html" target="_blank" rel="noopener">https://www.cnnphilippines.com/life/culture/2017/03/28/sexual-harassment-policies.html</a></li>
+          <li id="ref-4">Plan International. (2020). <em>Free to be online? Girls' and young women's experiences of online harassment</em> (The State of the World's Girls 2020). <a href="https://www.plan.de/fileadmin/website/05._Ueber_uns/Maedchenberichte/Maedchenbericht_2020/Free_to_be_online_report_englisch_FINAL.pdf" target="_blank" rel="noopener">https://www.plan.de/fileadmin/website/05._Ueber_uns/Maedchenberichte/Maedchenbericht_2020/Free_to_be_online_report_englisch_FINAL.pdf</a></li>
+          <li id="ref-5">Plan International Philippines. (2020, October 16). <em>7 in 10 girls and young women in PH experience online harassment – Plan International study</em>. <a href="https://plan-international.org/philippines/news/2020/10/16/7-in-10-girls-and-young-women-in-ph-experience-online-harassment-plan-international-study/" target="_blank" rel="noopener">https://plan-international.org/philippines/news/2020/10/16/7-in-10-girls-and-young-women-in-ph-experience-online-harassment-plan-international-study/</a></li>
+          <li id="ref-6">Loukaitou-Sideris, A., &amp; Ceccato, V. (Eds.). (2020). <em>Transit crime and sexual violence in cities: International evidence and prevention</em> ("Manila, Philippines" chapter). Routledge. Summary listed in the PIDS Socioeconomic Research Portal: <a href="https://serp-p.pids.gov.ph/publication/public/view?slug=manila-philippines" target="_blank" rel="noopener">https://serp-p.pids.gov.ph/publication/public/view?slug=manila-philippines</a></li>
+          <li id="ref-7">GMA News Online. (2017). <em>UN Women, Manila gov't launch initiative vs. catcalling, sexual harassment in public spaces</em>. <a href="https://www.gmanetwork.com/news/topstories/metro/634903/un-women-manila-gov-t-launch-initiative-vs-catcalling-sexual-harassment-in-public-spaces/story/" target="_blank" rel="noopener">https://www.gmanetwork.com/news/topstories/metro/634903/un-women-manila-gov-t-launch-initiative-vs-catcalling-sexual-harassment-in-public-spaces/story/</a></li>
+          <li id="ref-8">Philippine Statistics Authority. (2022). <em>End VAW 2022 campaign</em> [Infographic; data from the 2022 National Demographic and Health Survey]. <a href="https://psa.gov.ph/sites/default/files/infographics/(ons-cleared)_End%20VAW%202022%20Campaign%20-1_ONS-signed.pdf" target="_blank" rel="noopener">https://psa.gov.ph/sites/default/files/infographics/(ons-cleared)_End%20VAW%202022%20Campaign%20-1_ONS-signed.pdf</a></li>
+          <li id="ref-9">Anti-Sexual Harassment Act of 1995, Republic Act No. 7877 (1995). <a href="https://lawphil.net/statutes/repacts/ra1995/ra_7877_1995.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra1995/ra_7877_1995.html</a></li>
+          <li id="ref-10">Anti-Violence Against Women and Their Children Act of 2004, Republic Act No. 9262 (2004). <a href="https://lawphil.net/statutes/repacts/ra2004/ra_9262_2004.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra2004/ra_9262_2004.html</a></li>
+          <li id="ref-11">Magna Carta of Women, Republic Act No. 9710 (2009). <a href="https://lawphil.net/statutes/repacts/ra2009/ra_9710_2009.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra2009/ra_9710_2009.html</a></li>
+          <li id="ref-12">Cybercrime Prevention Act of 2012, Republic Act No. 10175 (2012). <a href="https://lawphil.net/statutes/repacts/ra2012/ra_10175_2012.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra2012/ra_10175_2012.html</a></li>
+          <li id="ref-13">Safe Spaces Act, Republic Act No. 11313 (2019). <a href="https://lawphil.net/statutes/repacts/ra2019/ra_11313_2019.html" target="_blank" rel="noopener">https://lawphil.net/statutes/repacts/ra2019/ra_11313_2019.html</a></li>
+          <li id="ref-14">Philippine Commission on Women. (n.d.). <em>Republic Act 11313: Safe Spaces Act</em>. <a href="https://pcw.gov.ph/republic-act-11313-safe-spaces-act/" target="_blank" rel="noopener">https://pcw.gov.ph/republic-act-11313-safe-spaces-act/</a></li>
+          <li id="ref-15">Philippine Commission on Women. (n.d.). <em>FAQs RA 9262: The Anti-Violence Against Women and Their Children Act of 2004</em>. <a href="https://pcw.gov.ph/faq-republic-act-9262/" target="_blank" rel="noopener">https://pcw.gov.ph/faq-republic-act-9262/</a></li>
+          <li id="ref-16">Commission on Human Rights. (2023). <em>Statement of the Commission on Human Rights strongly condemning the series of cases of violence against young women</em>. <a href="https://chr.gov.ph/statement-of-the-commission-on-human-rights-strongly-condemning-the-series-of-cases-of-violence-against-young-women/" target="_blank" rel="noopener">https://chr.gov.ph/statement-of-the-commission-on-human-rights-strongly-condemning-the-series-of-cases-of-violence-against-young-women/</a></li>
+          <li id="ref-17">Right To Be. (n.d.). <em>Key takeaways and questions on the 5Ds of bystander intervention animated series</em>. <a href="https://righttobe.org/?p=2750" target="_blank" rel="noopener">https://righttobe.org/?p=2750</a></li>
+        </ol>
+        <p class="refs-note">Images, video and the 3D model on this site are original assets generated with Higgsfield AI for this project. All text is original and paraphrases its sources.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 9. FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand" id="footerBrand" aria-hidden="true">ligtas</p>
+      <div class="footer-meta">
+        <p>LIGTAS: a midterm project on street and online sexual harassment in the Philippines.</p>
+        <p class="credit">Daniel Diaz, BSIT 4-4</p>
+        <p><a class="u-link" href="#references">17 references, APA 7</a> &nbsp;&nbsp; <a class="u-link" href="#top">Back to top</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
